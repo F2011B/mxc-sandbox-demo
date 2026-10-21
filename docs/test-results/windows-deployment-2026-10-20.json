@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "installation": "%LOCALAPPDATA%\\Programs\\MxcSandboxConsole\\0.2.1",
+  "shortcut": "%USERPROFILE%\\Desktop\\MXC Sandbox Console.lnk",
+  "omp": "%LOCALAPPDATA%\\Programs\\omp\\omp.exe",
+  "packageSha256": "9AD9E68BDE294246568B2764BE44B934BC16C2FC2761958DD61E53B63C0114F7",
+  "windowsBuild": "10.0.26200",
+  "noSystemConfigurationChanges": true,
+  "installedFilesSha256Verified": 634,
+  "redactedFields": [
+    "installation",
+    "shortcut",
+    "omp"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "version": "1.0.1",
+  "archiveSha256": "0e832239454ba7fcd338ff56218a287eef4c0a01c1484084b869f55feff8abe9",
+  "executors": {
+    "win-x64": "090f5d1f7bb93104ab08dcd4e8034ef954aeefcdaf6658dde5f7dff4cfc12f3a",
+    "win-arm64": "91aa4171e8809f33f19622c381116188eab7d8c8cffad231230a31b58146ee77"
+  }
+}

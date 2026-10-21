@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+<ItemGroup>
+<ProjectReference Include="../MxcSandbox.Console/MxcSandbox.Console.csproj" ReferenceOutputAssembly="false" />
+<ProjectReference Include="../MxcSandbox.Core/MxcSandbox.Core.csproj" />
+<PackageReference Include="Avalonia.Desktop" Version="[12.1.4]" />
+<PackageReference Include="Avalonia.Themes.Fluent" Version="[12.1.4]" />
+<PackageReference Include="Avalonia.Fonts.Inter" Version="[12.1.4]" />
+<PackageReference Include="Avalonia.Headless" Version="[12.1.4]" />
+</ItemGroup>
+<Target Name="CopyConsoleHost" AfterTargets="Build">
+<ItemGroup><ConsoleHostFiles Include="../MxcSandbox.Console/bin/$(Configuration)/$(TargetFramework)/$(RuntimeIdentifier)/**/*" /></ItemGroup>
+<Copy SourceFiles="@(ConsoleHostFiles)" DestinationFiles="@(ConsoleHostFiles->'$(OutDir)console/%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+</Target>
+</Project>

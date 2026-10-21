@@ -1,0 +1,107 @@
+{
+  "os": "Microsoft Windows NT 10.0.26200.0",
+  "user": "<redacted>",
+  "userSid": "<redacted>",
+  "elevated": false,
+  "fixtures": "%TEMP%\\mxc-win-check-<session>",
+  "checks": [
+    {
+      "name": "standard-user-and-native-base-container",
+      "passed": true,
+      "elapsedMs": 88
+    },
+    {
+      "name": "installed-desktop-console-entrypoint",
+      "passed": true,
+      "elapsedMs": 655
+    },
+    {
+      "name": "real-console-input-working-directory-and-exit",
+      "passed": true,
+      "elapsedMs": 695
+    },
+    {
+      "name": "filesystem-read-write-and-denials",
+      "passed": true,
+      "elapsedMs": 672
+    },
+    {
+      "name": "host-environment-not-inherited",
+      "passed": true,
+      "elapsedMs": 665
+    },
+    {
+      "name": "direct-loopback-network-denied-with-live-host-fixture",
+      "passed": true,
+      "elapsedMs": 682
+    },
+    {
+      "name": "omp-version-and-real-interactive-provider-picker",
+      "passed": true,
+      "elapsedMs": 2350
+    },
+    {
+      "name": "ctrl-c-aborts-live-child-and-keeps-shell",
+      "passed": true,
+      "elapsedMs": 1005
+    },
+    {
+      "name": "stop-terminates-live-shell-and-child",
+      "passed": true,
+      "elapsedMs": 775
+    },
+    {
+      "name": "timeout-terminates-live-shell",
+      "passed": true,
+      "elapsedMs": 4350
+    },
+    {
+      "name": "host-acls-unchanged",
+      "passed": true,
+      "elapsedMs": 0
+    }
+  ],
+  "transport": "SSH Session 0 with new private test-only window station/desktop; genuine CREATE_NEW_CONSOLE and Win32 console input/buffer APIs; no visible desktop login",
+  "probe": {
+    "Tier": 1,
+    "NeedsDaclAugmentation": false,
+    "Warnings": [],
+    "Probes": {
+      "BaseContainerApiPresent": true,
+      "NativeCaptureAvailable": true,
+      "GuardedCaptureAvailable": false,
+      "BfscfgPresent": false,
+      "BfsCompiledIn": false,
+      "BaseContainerSupportsDenyPaths": true,
+      "BaseContainerSupportsEnumeratePaths": true,
+      "BaseContainerSupportsIngressHostLoopbackAllow": true,
+      "BaseContainerSupportsIdentitylessLoopbackProxy": true,
+      "IsolationSessionAvailable": false,
+      "HyperlightAvailable": true,
+      "UiCapabilities": {
+        "CanBlockClipboardRead": true,
+        "CanBlockClipboardWrite": true,
+        "CanBlockInputInjection": true,
+        "CanBlockInputMethodChanges": true,
+        "CanBlockExternalUiObjects": true,
+        "CanBlockGlobalUiNamespace": true,
+        "CanBlockDesktopSwitching": true,
+        "CanBlockLogoffOrShutdown": true,
+        "CanBlockSystemParameterChanges": true,
+        "CanBlockDisplaySettingsChanges": true
+      }
+    },
+    "Error": null
+  },
+  "omp": {
+    "directory": "%LOCALAPPDATA%\\Programs\\omp",
+    "sha256": "545FD5195DA9C61667F600DE2F9845F51C2416465C17289176C2CAA90F576D3A"
+  },
+  "passed": true,
+  "redactedFields": [
+    "user",
+    "userSid",
+    "fixtures",
+    "omp.directory"
+  ]
+}

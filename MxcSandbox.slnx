@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MxcSandbox.WindowsShell/MxcSandbox.WindowsShell.csproj" />
+    <Project Path="src/MxcSandbox.Console/MxcSandbox.Console.csproj" />
+    <Project Path="src/MxcSandbox.Core/MxcSandbox.Core.csproj" />
+    <Project Path="src/MxcSandbox.Desktop/MxcSandbox.Desktop.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MxcSandbox.WindowsChecks/MxcSandbox.WindowsChecks.csproj" />
+    <Project Path="tests/MxcSandbox.ConsoleChecks/MxcSandbox.ConsoleChecks.csproj" />
+    <Project Path="tests/MxcSandbox.Checks/MxcSandbox.Checks.csproj" />
+  </Folder>
+</Solution>
